@@ -17,7 +17,7 @@ let package = Package(
             name: "PusherSwift",
             dependencies: [
                 "NWWebSocket",
-                "TweetNacl",
+                .product(name: "TweetNacl", package: "tweetnacl-swiftwrap")
             ],
             path: "Sources"
         ),
